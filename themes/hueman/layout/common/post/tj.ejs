@@ -1,0 +1,10 @@
+
+<% if(theme.comment.valine.on && theme.comment.valine.visitor){ %>
+  <div class="article-tag">
+    <i class="fa fa-eye"></i>
+    <span id="<%- url_for(post.path) %>" class="leancloud-visitors article-category-link" data-flag-title="<%= post.title %>">
+      <em class="post-meta-item-text">阅读量 </em>
+      <i class="leancloud-visitors-count"></i>
+    </span>
+  </div>
+<% } %>
